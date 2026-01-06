@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
+<!-- width=device-width - gjør at designet tilpasses skjermbredden -->
+ <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
+ <link rel="stylesheet" href="styleapi.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Javascript</h1>
+</div>
+
+<div class="row">
+    <ul class="topnav">
+      <li><a href="TidOgDato.html" class="menu-li">Geolocation</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
+      <li><a href="SisteUrl.html" class="menu-li">Siste url</a></li>
+      <li><a href="konseptutvikling.html" class="menu-li">Konseptutvikling og programmering</a></li>
+      <li><a href="norsk.html" class="menu-li">Norsk</a></li>
+      <li><a href="naturfag.html" class="menu-li">Naturfag</a></li>
+      <li><a href="kroppsøving.html" class="menu-li">Kroppsøving</a></li>
+      <li><a href="api.html" class="menu-li">API</a></li>
+    </ul>
+  </div>
+
+<div class = "main-content">
+  <h1>JavaScript</h1>
+
+<p> Dette webområdet er for javascript.</p>
+
+<p>Klikk på knappen for å få geologiske data</p>
+
+<div class="buttongeolocation">
+  <button onclick="getLocation()">Få geologiske data</button>
+</div>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch(err) {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+
+</script>
+
+
+<div class="footer">
+  <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
+</div>
+
+</body>
+</html>
