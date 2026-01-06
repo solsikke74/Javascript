@@ -32,33 +32,6 @@
 
 <p> Dette webområdet er for javascript.</p>
 
-<p>Klikk på knappen for å få geologiske data</p>
-
-<div class="buttongeolocation">
-  <button onclick="getLocation()">Få geologiske data</button>
-</div>
-
-<p id="demo"></p>
-
-<script>
-const x = document.getElementById("demo");
-
-function getLocation() {
-  try {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } catch(err) {
-    x.innerHTML = err;
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-
-</script>
-
 
 <div class="footer">
   <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
