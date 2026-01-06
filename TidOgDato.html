@@ -28,15 +28,20 @@
   </div>
 
 <div class = "main-content">
-  <h1>JavaScript</h1>
+  <h1>Tid og dato</h1>
 
-<p> Dette webområdet er for javascript.</p>
 
-<p>Klikk på knappen for å få geologiske data</p>
+
+<p>Klikk på knappen for å få tid og dato>/p>
 
 <div class="buttongeolocation">
-  <button onclick="getLocation()">Få geologiske data</button>
+  <button onclick="document.getElementById('demo').innerHTML = Date()">Klikk på meg for å vise dato og tid</button>
 </div>
+
+<p id="demo"></p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
 
 <p id="demo"></p>
 
