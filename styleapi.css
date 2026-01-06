@@ -40,7 +40,7 @@ html {
 }
 
 .header {
-  background-color: #00b4d8;
+  background-color: #03045e;
   padding: 1px;
   margin-top: 1px;
   max-width: 100%;
@@ -60,7 +60,7 @@ ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #00b4d8;
+  background-color: #03045e;
 }
 
 /* Style links in topnav */
@@ -73,7 +73,7 @@ ul.topnav li a {
 
 /* Change color on hover */
 ul.topnav li a:hover {
-  background-color: #03045e;
+  background-color: #0077b6;
   color: #caf0f8;
 }
 
@@ -114,7 +114,7 @@ ul.topnav li a:hover {
 
 .footer {
   display: block;
-  background-color: #00b4d8;
+  background-color: #03045e;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
