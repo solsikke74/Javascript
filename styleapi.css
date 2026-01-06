@@ -1,3 +1,4 @@
+
 /*Color theme: Soft lavender
 LInk: https://coolors.co/palettes/trending
 Colors: 22223b, 4a4e69, 9a8c98, c9ada7, f2e9e4*/
@@ -83,6 +84,15 @@ ul.topnav li a:hover {
 }
 
 
+.aside {
+  background-color: #a6b1e1;
+  padding: 15px;
+  color: #f4eeff;
+  border-radius: 15px 60px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
 .buttongeolocation button{
   background-color:#9a8c98;
