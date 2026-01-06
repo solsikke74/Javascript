@@ -12,36 +12,51 @@
 <body>
 
 <div class="header">
-    <h1>Live Cornelia Gravdal</h1>
+    <h1>API</h1>
 </div>
 
 <div class="row">
-    <div class="col-3 col-s-3 menu">
-      <ul class="topnav">
-        <li><a href="Geolocation API.html" class="menu-li">API</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
-        <li><a href="SisteUrl.html" class="menu-li">Siste url</a></li>
-        <li><a href="konseptutvikling.html" class="menu-li">Konseptutvikling og programmering</a></li>
-        <li><a href="norsk.html" class="menu-li">Norsk</a></li>
-        <li><a href="naturfag.html" class="menu-li">Naturfag</a></li>
-        <li><a href="kroppsøving.html" class="menu-li">Kroppsøving</a></li>
-        <li><a href="engelsk.html" class="menu-li">Engelsk</a></li>
-        <li><a href="Geolocation API.html" class="menu-li">Test</a></li>
-      </ul>
-    </div>
+    <ul class="topnav">
+      <li><a href="Geolocation API.html" class="menu-li">Geolocation</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
+      <li><a href="SisteUrl.html" class="menu-li">Siste url</a></li>
+      <li><a href="konseptutvikling.html" class="menu-li">Konseptutvikling og programmering</a></li>
+      <li><a href="norsk.html" class="menu-li">Norsk</a></li>
+      <li><a href="naturfag.html" class="menu-li">Naturfag</a></li>
+      <li><a href="kroppsøving.html" class="menu-li">Kroppsøving</a></li>
+      <li><a href="api.html" class="menu-li">API</a></li>
+    </ul>
+  </div>
 
-    <div class="col-6 col-s-9">
-      <p><h2>Mine fag</h2> </p>
-        <p><h4>Teknologiforståelse</p></h4>
-        <p><h4>Produksjon og historiefortelling</p></h4>
-        <p><h4>Konseptutvikling og programmering</p></h4>
-        <p><h4>Norsk</p></h4>
-        <p><h4>Naturfag</p></h4>
-        <p><h4>Kroppsøving</p></h4>
-        <p><h4>Engelsk</p></h4>
-    </div>
+<div class = "main-content">
+  <h1>JavaScript Geolokasjon</h1>
 
-    
+<p>Klikk på knappen for å få geologiske data</p>
+
+<div class="buttongeolocation">
+  <button onclick="getLocation()">Få geologiske data</button>
 </div>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch(err) {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+
+</script>
+
 
 <div class="footer">
   <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
