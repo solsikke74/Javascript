@@ -18,7 +18,7 @@ if(tall === 5){
     console.log("Tallet er ikke 5");
 }
 
-var alder = 16;
+var alder = 19;
 
 if (alder>=18) {
     console.log("Du er gammel nok til å kjøre bil!");
