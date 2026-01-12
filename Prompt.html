@@ -30,9 +30,22 @@
 <div class = "main-content">
   <h1>JavaScript</h1>
 
-<p> Test ut Javascript med prompt, dato og måned. Kanskje du har navnedag i dag?</p>
+<p>Klikk på knappen for å teste ut prompt.</p>
 
+<div class="buttongeolocation">
+  <button onclick="myFunction()">Test ut prompt</button>
+  <p id="demo"></p>
+</div>
 
+<script>
+function myFunction() {
+  let person = prompt("Vær vennlig og skriv inn navnet ditt", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hei " + person + "! Hvordan har du det i dag?";
+  }
+}
+</script>
 
 <div class="footer">
   <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
