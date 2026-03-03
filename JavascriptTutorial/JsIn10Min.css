@@ -1,0 +1,25 @@
+/*Color theme: https://coolors.co/0d1b2a-1b263b-415a77-778da9-e0e1dd
+LInk: https://coolors.co/palettes/trending
+Colors: 0D1B2A, 1B263B, 415A77, 778DA9, E0E1DD */
+
+
+body {
+  background-color: #E0E1DD;
+  text-align: center;
+}
+
+#ChangeColor{
+  width: 400px;
+    height: 400px;
+    background-color: #415A77;
+    margin: 20px auto;
+}
+
+.button {  
+  background-color: #778DA9;
+  color: #E0E1DD;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+}
