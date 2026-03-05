@@ -8,11 +8,11 @@ body {
   text-align: center;
 }
 
-#ChangeColor{
+#ChangeMe{
   width: 400px;
-    height: 400px;
-    background-color: #415A77;
-    margin: 20px auto;
+  height: 400px;
+  background: #778DA9;
+  margin: 20px auto;
 }
 
 .button {  
