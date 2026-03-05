@@ -2,9 +2,9 @@ var button = document.querySelector("button");
 var box = document.getElementById("ChangeMe");
 
 function ChangeColor() {
-    if (box.style.backgroundColor == "#778DA9") {
-        box.style.backgroundColor = "#0D1B2A";
+    if (box.style.background == "red") {
+        box.style.background = "#415A77";
     }else {
-        box.style.backgroundColor = "#778DA9";
+        box.style.background = "red";
     }
 }
