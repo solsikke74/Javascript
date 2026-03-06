@@ -9,17 +9,25 @@ body {
 }
 
 #ChangeMe{
+  border-radius: 25px; /* Rounded corners, https://www.w3schools.com/css/css3_borders.asp */
   width: 400px;
   height: 400px;
-  background: #778DA9;
+  background: rgb(119, 141, 169);
   margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
 }
 
 .button {  
+  border-radius: 25px;
   background-color: #778DA9;
+  border:1px solid #415A77;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
   color: #E0E1DD;
-  padding: 15px 32px;
+  padding: 20px 40px;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 20px;
+}
+#li {
+  line-height: 2;
 }
