@@ -1,0 +1,197 @@
+
+
+
+#ChangeMe{
+  border-radius: 25px; /* Rounded corners, https://www.w3schools.com/css/css3_borders.asp */
+  width: 400px;
+  height: 400px;
+  background: rgb(119, 141, 169);
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
+}
+
+.button {  
+  border-radius: 25px;
+  background-color: #778DA9;
+  border:1px solid #415A77;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
+  color: #E0E1DD;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px;
+}
+
+/*Color theme: Ocean Breeze
+LInk: https://coolors.co/palettes/trending
+Colors: 03045e, 0077b6, 00b4d8, 90e0ef, caf0f8*/
+
+
+* {       /* Gjør det mulig å bryte opp skjermen i grid*/
+  box-sizing: border-box;
+}
+
+
+a {
+  color: #ffc300;
+}
+
+p {
+  line-height: 1.8;
+}
+
+body {
+  background-color: #caf0f8;
+}
+
+img{
+  border-radius: 8px;
+}
+.row::after { /*   */
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+html {
+  font-family: Verdana, Arial, sans-serif;
+  color: #03045e;
+}
+
+.header {
+  background-color: #03045e;
+  padding: 1px;
+  margin-top: 1px;
+  max-width: 100%;
+}
+
+.header h1{
+    font-size: 20 px;
+    color: #caf0f8;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    /*text-shadow: 1px 1px 1px #90e0ef;  Lager teksteffekt på bokstavene*/
+  }
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #03045e;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #caf0f8;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #0077b6;
+  color: #caf0f8;
+}
+
+
+.main-content {
+    flex: 1; /* Tar opp all ledig plass mellom header og footer */
+    padding: 20px;
+}
+
+div.polaroid {
+  width: 30%;
+  background-color: #caf0f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/*.aside {
+  background-color: #a6b1e1;
+  padding: 15px;
+  color: #f4eeff;
+  border-radius: 15px 60px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+} */
+
+.buttongeolocation button{
+  background-color:#03045e;
+  color:#ffc300 ;
+  padding: 12px;
+  border-radius:12px;
+
+}
+.buttongeolocation button:hover{
+  background-color:#0077b6;
+  color: #ffc300;
+  box-shadow: 0 8px 16px 0 rgba(10, 1, 32, 0.943);
+}
+
+.buttongeolocatin button:active {
+  box-shadow: 0 5px #03045e;
+  transform: translateY(4px);
+}
+
+.footer {
+  display: block;
+  background-color: #03045e;
+  color: #ffc300;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  border-radius: 10px 10px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

@@ -3,11 +3,11 @@
 <head>
     <title>Javascript</title>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <link rel="icon" type="image/x-icon" href="../bilder/JS_icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
 <!-- width=device-width - gjør at designet tilpasses skjermbredden -->
  <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
- <link rel="stylesheet" href="styleapi.css">
+ <link rel="stylesheet" href="EndreInnhold.css">
  
 </head>
 <body>
@@ -18,29 +18,29 @@
 
 <div class="row">
     <ul class="topnav">
-      <li><a href="TidOgDato.html" class="menu-li">Tid og dato</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
-      <li><a href="EndreInnhold.html" class="menu-li">Endre innhold</a></li>
-      <li><a href="BytteImage.html" class="menu-li">Bytte bilde</a></li>
-      <li><a href="Prompt.html" class="menu-li">Prompt</a></li>
+      <li><a href="../TidOgDato.html" class="menu-li">Tid og dato</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
+      <li><a href="EndreInnhold/EndreInnhold.html" class="menu-li">Endre innhold</a></li>
+      <li><a href="../BytteImage.html" class="menu-li">Bytte bilde</a></li>
+      <li><a href="../Prompt.html" class="menu-li">Prompt</a></li>
       <li><a href="naturfag.html" class="menu-li"></a></li>
       <li><a href="kroppsøving.html" class="menu-li"></a></li>
       <li><a href="api.html" class="menu-li"></a></li>
     </ul>
   </div>
 
-<p id="demo">Klikk på knappen for å vise skjult innhold</p>
+<p id="MinTekst">Her har du original tekst. </p>
 
 <div class="buttongeolocation">
-  <button onclick='document.getElementById("demo").innerHTML = "Bjørnen sover"'>Klikk på meg for å vise skjult innhold. </button>
+  <button onclick="EndreTekst()">Klikk meg </button>
 </div>
 
 <p></p>
 
 
 <div class="footer">
-  <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
+  <p><a href="../index.html" class="footer">Tar deg tilbake til startsiden</a></p>
 </div>
 
-     <script src="script.js"></script>
+<script src="EndreInnhold.js"></script>
 </body>
 </html>
