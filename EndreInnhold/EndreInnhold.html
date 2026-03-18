@@ -1,68 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
 <head>
-    <title>Javascript</title>
+    <title>Javascript - Endre Innhold</title>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="../bilder/JS_icon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
-<!-- width=device-width - gjør at designet tilpasses skjermbredden -->
- <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
- <link rel="stylesheet" href="EndreInnhold.css">
- </head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EndreInnhold.css">
+</head>
 <body>
 
-<div class="header">
+<header class="header">
     <h1>Endre innholdet på en nettside</h1>
-</div>
+</header>
 
-<div class="row">
+<nav>
     <ul class="topnav">
-      <li><a href="../TidOgDato.html" class="menu-li">Tid og dato</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
-      <li><a href="EndreInnhold/EndreInnhold.html" class="menu-li">Endre innhold</a></li>
-      <li><a href="../BytteImage.html" class="menu-li">Bytte bilde</a></li>
-      <li><a href="../Prompt.html" class="menu-li">Prompt</a></li>
-      <li><a href="api.html" class="menu-li"></a></li>
+      <li><a href="../TidOgDato.html" class="active">Tid og dato</a></li>
+      <li><a href="EndreInnhold/EndreInnhold.html" class="active">Endre innhold</a></li>
+      <li><a href="../BytteImage.html" class="active">Bytte bilde</a></li>
+      <li><a href="../Prompt.html" class="active">Prompt</a></li>
     </ul>
-  </div>
+</nav>
 
+<main>
+    <section>
+        <p id="MinTekst">Her har du original tekst.</p>
 
+        <div class="button-container">
+            <button onclick="EndreTekst()">Klikk for å endre tekst</button>
+        </div>
 
+        <p>
+            Se <a href="https://youtu.be/TL1ZL67heXg" target="_blank" class="special-link">video</a> om hvordan du bruker JavaScript.
+        </p>
+    </section>
+</main>
 
-
-
-
-
-
-
-<p id="MinTekst">Her har du original tekst. </p>
-
-
-<div class="buttongeolocation">
-  <button onclick="EndreTekst()"> Klikk meg </button>
-</div>
-
-<p>
-Se <a href="https://youtu.be/TL1ZL67heXg" target="_blank" alt="Viser hvordan du kan bruke Javacsript for å endre innholdet" style="color:#03045e;" ">video </a>om hvordan du lager koden som kjøres på dette webområdet. 
-</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p></p>
-
-<div class="footer">
-  <p><a href="../index.html" class="footer">Tar deg tilbake til startsiden</a></p>
-</div>
+<footer class="footer">
+    <p><a href="../index.html">Tilbake til startsiden</a></p>
+</footer>
 
 <script src="EndreInnhold.js"></script>
 
