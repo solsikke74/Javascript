@@ -14,6 +14,53 @@
 /* a CSS property value that forces an element's specified width and height to include its 
 content, padding, and border. It prevents elements from expanding unexpectedly when padding or borders are added, 
 making layout calculations much easier and more intuitive compared to the default content-box. */
+ 
+.header {
+  background-color: #03045e;
+  color: #caf0f8;
+  padding: 10px;
+  text-align: left;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 20px;
+  overflow: hidden; 
+  background-color: #03045e;
+}
+
+ul.topnav li{
+  float: left;
+  }
+
+ul.topnav li a {
+  display: block;
+  color: #caf0f8;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: #caf0f8 solid 1px; 
+  border-radius: 6px;   /* valgfritt – penere */ 
+  margin: 30px;      
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #0077b6;}
+
+main{
+  width: min(600px, 90%); 
+  background-color: #caf0f8;  
+  color: #03045e;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;   /* 🔹 Legg elementene under hverandre */
+  justify-content: center;  /* 🔹 Sentrer vertikalt */
+  align-items: flex-start;     
+  text-align: left;
+  padding: 40px 14px 40px 14px;
+  border-radius: 10px;
+  margin:24px auto;
+ }
 
 
 h1 {
@@ -24,8 +71,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  line-height: 1.3;
-  margin-top: 1.5em;
+  line-height: 1.2;
   margin-bottom: 0.5em;
 }
 
@@ -34,6 +80,7 @@ h3 {
   line-height: 1.4;
   margin-top: 1.2em;
 }
+
 p {
     color: #1f7a8c;
     line-height: 1.6;
@@ -52,6 +99,8 @@ a:visited {
   background-color: transparent;
 }
 
+
+
 body {
     background-color:#caf0f8;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -59,30 +108,7 @@ body {
     padding: 0;
 }
 
- ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; 
-  background-color: #3045e8;
-}
 
-ul.topnav li{
-  float: left;
-  }
-
-ul.topnav li a {
-  display: block;
-  color: #e1e5f2;
-  text-align: center;
-  padding: 20px 40px;
-  text-decoration: none;
-  border: #bfdbf7 solid 1px; 
-  border-radius: 6px;   /* valgfritt – penere */ 
-  margin: 30px;      
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #1f7a8c;}
 
 
 @media screen and (max-width: 600px) {
@@ -91,21 +117,18 @@ ul.topnav li a:hover:not(.active) {background-color: #1f7a8c;}
 }
 
 
- main{
-    background-color: #bfdbf7;
-    color: #1f7a8c;
- }
+ 
 
  .footer a { 
-  color: #e1e5f2;
+  color: #caf0f8;
   text-decoration: none;
   font-size: 18px;
 }
 
   footer{
   width: min(600px, 90%); 
-  background-color: #022b3a;  
-  color: #e1e5f2;
+  background-color: #03045e;  
+  color: #caf0f8;
   min-height: 80px;
   display: flex;
   justify-content: center;
@@ -117,61 +140,6 @@ ul.topnav li a:hover:not(.active) {background-color: #1f7a8c;}
  }
 
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--cyan-mist);
-  color: var(--deep-blue);
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Header */
-.header {
-  background-color: var(--deep-blue);
-  color: var(--cyan-mist);
-  padding: 2rem;
-  text-align: left;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-/* Navigasjon */
-.topnav {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: var(--deep-blue);
-  overflow-x: auto; /* Scroll på mobil hvis menyen er lang */
-}
-
-.topnav li a {
-  display: block;
-  color: var(--cyan-mist);
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.topnav li a:hover {
-  background-color: var(--ocean-blue);
-  
-}
-
-/* Hovedinnhold */
-main {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  min-height: 60vh;
-}
 
 #MinTekst {
   font-size: 1.2rem;
@@ -184,7 +152,7 @@ main {
 }
 
 button {
-  background-color: var(--deep-blue);
+  background-color: #03045e;
   color: var(--cyan-mist);
   padding: 15px 30px;
   border: none;
@@ -196,7 +164,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--ocean-blue);
+  background-color: #0077b6;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(3, 4, 94, 0.3);
 }
@@ -205,17 +173,3 @@ button:active {
   transform: translateY(1px);
 }
 
-/* Footer */
-.footer {
-  background-color: var(--deep-blue);
-  color: var(--cyan-mist);
-  text-align: center;
-  padding: 2rem;
-  margin-top: 50px;
-}
-
-.footer a {
-  color: var(--accent-yellow);
-  text-decoration: none;
-  font-weight: bold;
-}

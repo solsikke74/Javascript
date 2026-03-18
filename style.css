@@ -1,0 +1,209 @@
+:root {
+  --deep-blue: #03045e;
+  --ocean-blue: #0077b6;
+  --sky-blue: #00b4d8;
+  --pale-blue: #90e0ef;
+  --cyan-mist: #caf0f8;
+  --accent-yellow: #ffc300; /* Beholder denne for kontrast */
+}
+
+*, *::before, *::after 
+{ 
+  box-sizing: border-box;
+}
+/* a CSS property value that forces an element's specified width and height to include its 
+content, padding, and border. It prevents elements from expanding unexpectedly when padding or borders are added, 
+making layout calculations much easier and more intuitive compared to the default content-box. */
+ 
+.header {
+  background-color: #03045e;
+  color: #caf0f8;
+  padding: 10px;
+  text-align: left;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 20px;
+  overflow: hidden; 
+  background-color: #03045e;
+}
+
+ul.topnav li{
+  float: left;
+  }
+
+ul.topnav li a {
+  display: block;
+  color: #caf0f8;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: #caf0f8 solid 1px; 
+  border-radius: 6px;   /* valgfritt – penere */ 
+  margin: 30px;      
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #0077b6;}
+
+main{
+  width: min(600px, 90%); 
+  background-color: #caf0f8;  
+  color: #03045e;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;   /* 🔹 Legg elementene under hverandre */
+  justify-content: center;  /* 🔹 Sentrer vertikalt */
+  align-items: flex-start;     
+  text-align: left;
+  padding: 40px 14px 40px 14px;
+  border-radius: 10px;
+  margin:24px auto;
+  flex: 1;   /* Tar all tilgjengelig plass og skyver footer ned */
+ }
+
+.teori {
+  background-color: whitesmoke;  
+  color: #03045e;
+  padding: 30px;
+  margin: 0px 40px 0px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2em;;
+  margin-bottom: 0.3em;
+  margin-top: 
+  Margin-left: 1.2em;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2em;
+  margin-bottom: 0.3em;
+  margin-left: 1.2em;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.1em;
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+  margin-left: 2.0em;
+}
+
+p {
+    color: #022b3a;
+    line-height: 1.1;
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    margin-left: 0.7em;
+}
+
+.innrykk{
+  margin-left: 3.5em;
+  margin-bottom: 1.0em;
+}
+
+a:link {
+  color: #022b3a;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #022b3a;
+  background-color: transparent;
+}
+
+.ul teori {
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.6;
+  margin-bottom: 8px;
+  list-style-type: none;
+}
+
+body {
+    background-color:#caf0f8;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /*gjør at header, main og footer legges under hverandre*/
+    color: #022b3a;
+  }
+
+
+html, body {
+  height: 100%; /* Sørger for at body tar hele høyden av viewporten, viktig for flexbox-layouten */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+ .footer a { 
+  color: #caf0f8;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer{
+  width: min(600px, 90%); 
+  background-color: #03045e;  
+  color: #caf0f8;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 14px;
+  align-items: center;
+  border-radius: 10px;
+  margin:24px auto;
+ }
+
+
+
+#MinTekst {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Knapper */
+.button-container {
+  margin: 30px 0;
+}
+
+button {
+  background-color: #03045e;
+  color: var(--cyan-mist);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px; /* Mer moderne pille-form */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(3, 4, 94, 0.2);
+}
+
+button:hover {
+  background-color: #0077b6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(3, 4, 94, 0.3);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
