@@ -1,6 +1,13 @@
 /*Color theme: https://coolors.co/0d1b2a-1b263b-415a77-778da9-e0e1dd
 LInk: https://coolors.co/palettes/trending
 Colors: 0D1B2A, 1B263B, 415A77, 778DA9, E0E1DD */
+:root {
+  --primary-color: rgb(13, 27, 42);
+  --secondary-color: rgb(27, 38, 59);
+  --accent-color: rgb(65, 90, 119);
+  --light-color: rgb(119, 141, 169);
+  --background-color: rgb(224, 225, 221);
+}
 
 h2 {
   color: #0D1B2A;
@@ -20,6 +27,7 @@ body {
   background: rgb(119, 141, 169);
   margin: 20px auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
+  border: 1px solid #bfdbf7;
 }
 
 .button {  

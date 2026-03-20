@@ -3,41 +3,83 @@
 <head>
     <title>Javascript</title>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <link rel="icon" type="image/x-icon" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
 <!-- width=device-width - gjør at designet tilpasses skjermbredden -->
  <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
- <link rel="stylesheet" href="../styleapi.css">
+ <link rel="stylesheet" href="BasicJs.css">
 </head>
 <body>
 
-<div class="header">
-    <h1>Javascript</h1>
-</div>
+<button onclick="ChangeColor()" class="button">Endre farge</button>
 
-<div class="row">
-    <ul class="topnav">
-      <li><a href="../Grunnleggende.html" class="menu-li">Grunnleggende</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar--> 
-      <li><a href="TidOgDato.html" class="menu-li">Tid og dato</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
-      <li><a href="EndreInnhold.html" class="menu-li">Endre innhold</a></li>
-      <li><a href="BytteImage.html" class="menu-li">Bytte bilde</a></li>
-      <li><a href="Prompt.html" class="menu-li">Prompt</a></li>
-      <li><a href="BytteFarge.html" class="menu-li">Bytte farge</a></li>
-      <li><a href="JsBasic/Switch.html" class="menu-li">Switch</a></li>
-      <li><a href="api.html" class="menu-li"></a></li>
-    </ul>
-  </div>
+<div id="ChangeMe"></div>
 
-<div class = "main-content">
-  <h1>Switch</h1>
+<section class="variants">
+    <h2>Kode</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>html</h3>
+            <p><code>&lt;button onclick="ChangeColor()" class="button"&gt;Endre farge&lt;/button&gt;</code></p>
+            <p> <code>&lt;div id="ChangeMe"&gt;&lt;/div&gt;</code></p>
+            <p><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></p>
+        </div>
+        <div class="card">
+          <h3>css</h3>
+          <p> <code>.button {  <br> 
+              border-radius: 25px; <br>
+              background-color: #778DA9;<br>
+              border:1px solid #415A77;<br>
+              color: #E0E1DD;<br>
+              padding: 20px 40px; /* avstand fra et element til ytterkanten til elementet. t, h, b, v, eller t og b*/<br>
+              text-align: center;<br>
+              font-size: inherit; /*arver fontstørrelsen fra css for body */<br>
+              margin: 20px;</code>
+              }</p>
+          <p><code>#ChangeMe{<br>
+              border-radius: 25px; /* Rounded corners, https://www.w3schools.com/css/css3_borders.asp */<br>
+              width: 400px;<br>
+              height: 400px;<br>
+              background: rgb(119, 141, 169);<br>
+              margin: 20px auto;<br>
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */<br>
+            } </code></p>
+          <p></p>
+        </div>
+        <div class="card">
+          <h3>javascript</h3>
+            <p><code>var button = document.querySelector("button");<br>
+                     var box = document.getElementById("ChangeMe"); <br><br>
 
-<p>Switch: i stedet for mange if-else</p>
-<p></p>
+                   function ChangeColor() { <br>
+                    let current = getComputedStyle(box).backgroundColor; <br><br>
 
-<div class="footer">
-  <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
-</div>
+                    switch (current) {  <br>
+                       &nbsp; case "rgb(119, 141, 169)": <br>
+                        &nbsp;    box.style.background = "rgb(13, 27, 42)"; <br>
+                        &nbsp;    break; <br><br>
 
-<script src="script.js"></script>
+                        &nbsp;case "rgb(13, 27, 42)":<br>
+                         &nbsp;   box.style.background = "rgb(27, 38, 59)";<br>
+                         &nbsp;   break;<br><br>
+
+                        &nbsp;case "rgb(27, 38, 59)":<br>
+                        &nbsp;    box.style.background = "rgb(224, 225, 221)";<br>
+                         &nbsp;   break;<br><br>
+
+                        &nbsp;case "rgb(224, 225, 221)":<br>
+                         &nbsp;   box.style.background = "rgb(65, 90, 119)";<br>
+                        &nbsp;    break;<br><br>
+
+                        &nbsp;case "rgb(65, 90, 119)":<br>
+                         &nbsp;   box.style.background = "rgb(119, 141, 169)";<br>
+                    &nbsp;}<br>
+                   }          <br> </code></p>
+            
+        </div>
+      </div>
+  </section>
+  
+<script src="Switch.js"></script>
 </body>
 </html>
