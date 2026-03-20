@@ -48,19 +48,14 @@ ul.topnav li a {
 ul.topnav li a:hover:not(.active) {background-color: #0077b6;}
 
 main{
-  width: min(600px, 90%); 
   background-color: #caf0f8;  
   color: #03045e;
   min-height: 80px;
-  display: flex;
-  flex-direction: column;   /* 🔹 Legg elementene under hverandre */
-  justify-content: center;  /* 🔹 Sentrer vertikalt */
-  align-items: flex-start;     
   text-align: left;
   padding: 40px 14px 40px 14px;
   border-radius: 10px;
-  margin:24px auto;
-  flex: 1;   /* Tar all tilgjengelig plass og skyver footer ned */
+  margin:24px;
+  flex: 1;  /* Dette skyver footer ned */
  }
 
 .teori {
@@ -76,8 +71,8 @@ h1 {
   font-size: 2.5rem;
   line-height: 1.2em;;
   margin-bottom: 0.3em;
-  margin-top: 
-  Margin-left: 1.2em;
+  margin-top: 0.3em;
+  margin-left: 1.2em;
 }
 
 h2 {
@@ -160,20 +155,20 @@ html, body {
 }
 
 .footer{
-  width: min(600px, 90%); 
   background-color: #03045e;  
   color: #caf0f8;
-  min-height: 80px;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 14px;
+  padding: 30px;
   align-items: center;
-  border-radius: 10px;
-  margin:24px auto;
- }
+  border-radius: 25px;
+  margin: 0px 40px 0px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
+}
 
 
+ 
 
 #MinTekst {
   font-size: 1.2rem;
