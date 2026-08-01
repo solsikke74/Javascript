@@ -23,7 +23,7 @@ body {
   background: rgb(119, 141, 169);
   margin: 20px auto; /* Topp og bunn, 20 px, mens horisontalt sentrert */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
-  border: 1px solid #bfdbf7;
+  border: 1px solid rgb(191, 219, 247); /* Border color, https://www.w3schools.com/css/css3_borders.asp */
   display: flex; /* Flexbox layout, der du endrer størrelsen etter skjermenhttps://www.w3schools.com/css/css3_flexbox.asp */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
@@ -57,6 +57,7 @@ body {
     padding: 20px;
     spacing: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.5;
 }
 
 .card:hover {
