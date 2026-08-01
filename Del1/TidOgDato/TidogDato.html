@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="TidOgDato.css">
+</head>
+<body>
+
+<button onclick="TidOgDato()" class="button">Vise tid og dato</button>
+
+<div id="ChangeMe"></div>
+    
+<h2 align="left">Kode</h2>
+
+<div class="card">
+    <h3>html</h3>
+    <p><code>&lt;button onclick="TidOgDato()" class="button"&gt;Vise tid og dato&lt;/button&gt;</code></p>
+    <p> <code>&lt;div id="ChangeMe"&gt;&lt;/div&gt;</code></p>
+    <p><code>&lt;script src="TidOgDato.js"&gt;&lt;/script&gt;</code></p>
+</div>
+<br>
+<div class="card">
+    <h3>css</h3>
+    <p> <code>.button {  <br> 
+        border-radius: 25px; <br>
+        background-color: rgb(119, 141, 169)<br>
+        border:1px solid rgb(13, 27, 42);<br>
+        color: rgb(224, 225, 221);<br>
+        padding: 20px 40px; /* avstand fra et element til ytterkanten til elementet. t, h, b, v, eller t og b*/<br>
+        text-align: center;<br>
+        font-size: inherit; /*arver fontstørrelsen fra css for body */<br>
+        margin: 20px;</code>
+        }</p>
+    <p><code>#ChangeMe{<br>
+        border-radius: 25px; /* Rounded corners, https://www.w3schools.com/css/css3_borders.asp */<br>
+        width: 400px;<br>
+        height: 400px;<br>
+        background: rgb(119, 141, 169);<br>
+        margin: 20px auto; /* Topp og bunn, 20 px, mens horisontalt sentrert */<br>
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */<br>
+        border: 1px solid #bfdbf7; <br>
+        display: flex; /* Flexbox layout, der du endrer størrelsen etter skjermenhttps://www.w3schools.com/css/css3_flexbox.asp */ <br>
+        justify-content: center; /* Center content horizontally */<br>
+        align-items: center; /* Center content vertically */<br>
+        text-align: center; /* Center text horizontally */<br>
+    } </code></p>
+</div>
+<br>
+<div class="card">
+    <h3>javascript</h3>
+    <p><code> function TidOgDato() { <br>
+   document.getElementById("ChangeMe").textContent = Date(); <br>
+}   </code></p>
+</div>
+
+<script src="TidOgDato.js"></script>
+</body>
+</html>

@@ -9,10 +9,6 @@ Colors: 0D1B2A, 1B263B, 415A77, 778DA9, E0E1DD */
   --background-color: rgb(224, 225, 221);
 }
 
-h2 {
-  color: #0D1B2A;
-  text-align: left;
-}
 
 body {
   background-color: #E0E1DD;
@@ -25,20 +21,20 @@ body {
   width: 400px;
   height: 400px;
   background: rgb(119, 141, 169);
-  margin: 20px auto;
+  margin: 20px auto; /* Topp og bunn, 20 px, mens horisontalt sentrert */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
   border: 1px solid #bfdbf7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: flex; /* Flexbox layout, der du endrer størrelsen etter skjermenhttps://www.w3schools.com/css/css3_flexbox.asp */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center text horizontally */
 }
 
 .button {  
   border-radius: 25px;
-  background-color: #778DA9;
-  border:1px solid #415A77;
-  color: #E0E1DD;
+  background-color: rgb(119, 141, 169);
+  border:1px solid rgb(13, 27, 42);
+  color: rgb(224, 225, 221);
   padding: 20px 40px;
   text-align: center;
   margin: 20px;
@@ -51,17 +47,7 @@ body {
     border-color: #1f7a8c;
 }
 
-#li {
-  line-height: 2;
-}
 
-/* Layout for XSS-kortene */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin: 20px 10px;
-}
 
 .card {
     text-align: left;
@@ -69,6 +55,7 @@ body {
     border: 1px solid #bfdbf7;
     border-radius: 8px;
     padding: 20px;
+    spacing: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

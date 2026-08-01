@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="no">
+<html>
 <head>
-    <title>Javascript - Intro</title>
+    <title>Javascript</title>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
+    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
 <!-- width=device-width - gjør at designet tilpasses skjermbredden -->
  <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
-    <link rel="stylesheet" href="../style.css">
+ <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
 <div class="header">
-    <h1>Javascript - Intro</h1>
+    <h1>Javascript</h1>
 </div>
 
 <div class="row">
     <ul class="topnav">
-      <li><a href="Del1/Del1.html" class="menu-li">Del 1</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar--> 
-      <li><a href="../Del2/Del2.html" class="menu-li">Del 2</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
+      <li><a href="Del1.html" class="menu-li">Del 1</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar--> 
+      <li><a href="Del2/Del2.html" class="menu-li">Del 2</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
       <li><a href="Del3/Del3.html" class="menu-li">Del 3</a></li>
       <li><a href="Del4/Del4.html" class="menu-li">Del 4</a></li>
       <li><a href="Del5/Del5.html" class="menu-li">Del 5</a></li>
@@ -28,8 +29,8 @@
   <h2>Del 1</h2>
 
   <h3>A</h3> 
-  <p class="innrykk">Hente tide og dato ved hjelp av <code>button onclick, document.getElementById, textContent og Date()</code> ved hjelp av <code>html, css og javascript. </code></p>
-  <p class="innrykk"><a href="TidOgDato/TidOgDato.html" style="color: #03045e;" target="_blank">Link </a>til en løsning.</p>
+  <p class="innrykk"><code>Intro javascript - Tid og dato</code> ved hjelp av <code>html, css og javascript. </code></p>
+  <p class="innrykk"><a href="TidOgDato.html" style="color: #03045e;" target="_blank">Link </a>til en løsning.</p>
   <p class="innrykk"> Her har du <a href="https://youtu.be/c-4cqidCJDg" style="color: #03045e;" target="_blank" >Link</a>  til en video som forklarer koden. </p>
 
     <ul class="teori">
@@ -59,24 +60,10 @@
   </p>
 </div>
 <br>
+<div class="footer">
+  <a href="../index.html">Tar deg tilbake til startsiden</a>
+</div>
 
-<main>
-    <p id="MinTekst">Her har du original tekst.</p>
-
-    <div class="button-container">
-        <button onclick="EndreTekst()">Klikk for å endre tekst</button>
-    </div>
-
-    <p>
-        Se <a href="https://youtu.be/TL1ZL67heXg" target="_blank" class="special-link">video</a> om hvordan du bruker JavaScript.
-    </p>
-</main>
-
-<footer class="footer">
-    <p><a href="../index.html">Tilbake til startsiden</a></p>
-</footer>
-
-<script src="EndreInnhold.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
