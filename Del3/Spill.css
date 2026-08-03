@@ -1,0 +1,136 @@
+
+:root {
+Bakgrunn: rgb(15, 23, 42);
+Kort_Tekstboks: rgb(30, 41, 59);
+Hovedtekst: rgb(226, 232, 240);
+Primær_aksent: rgb(56, 189, 248);
+Sekundær_aksent_Knapper: rgb(139, 92, 246);
+Hover_effekt_på_knapper: rgb(236, 72, 153);
+}
+
+h2 {
+  color: rgb(226, 232, 240);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: rgb(15, 23, 42);
+  text-align: center;
+  font-size: 16px;
+}
+
+p {
+  color: rgb(226, 232, 240);
+  max-width: 500px; /* Maksimal bredde for teksten, og ved å bruke max-width legger den seg automatisk under ved små skjermer */
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 20px;
+  margin-left: auto;  /* Dytter elementet fra venstre */
+  margin-right: auto; /* Dytter elementet fra høyre */
+}
+
+.ChangeMe{
+  border-radius: 25px; /* Rounded corners, https://www.w3schools.com/css/css3_borders.asp */
+  width: 700px;
+  background: rgb(15, 23, 42);
+  color: rgb(226, 232, 240);
+  font-family: 'Fira Code', monospace;
+  margin: 20px auto;
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */
+  border: 2px solid  rgb(139, 92, 246);
+  display: flex;
+  flex-direction: column; /* VIKTIG: Legger h2 og p under hverandre */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.button {
+  background-color: rgb(56, 189, 248);
+  color: rgb(15, 23, 42);
+  font-family: 'Fira Code', monospace;
+  border: 1px solid rgb(139, 92, 246);
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgb(236, 72, 153);
+    border-color: #1f7a8c;
+}
+
+/* --- Hjelpeklasser og animasjoner --- */
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#li {
+  line-height: 2;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 20px;
+  display: flex; 
+  flex-wrap: wrap;         /* Sørger for at menyen brettes fint på mobil */
+}
+
+ul.topnav li{
+  }
+
+ul.topnav li a {
+  display: block;
+  color: #caf0f8;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: #caf0f8 solid 1px; 
+  border-radius: 6px;   /* valgfritt – penere */ 
+  margin: 30px;      
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #0077b6;}
+/* Layout for XSS-kortene */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 10px;
+}
+
+.card {
+    text-align: left;
+    background-color:whitesmoke;
+    border: 1px solid #bfdbf7;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(2, 43, 58, 0.15);
+    border-color: #1f7a8c;
+}
+
+.card h4 {
+    margin-left: 0;
+    margin-top: 0;
+    color: #022b3a;
+}
