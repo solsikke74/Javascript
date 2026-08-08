@@ -27,55 +27,23 @@
 <div class="ChangeMe hidden"> <!-- Bruker en div for å vise teksten. Klassen "hidden" gjør at den ikke vises før knappen trykkes. -->
 </div>
 
-<!--
-<section class="variants">
-    <h2>Kode</h2>
-      <div class="card-grid">
+<!-- De nye elementene som skal dukke opp ETTER teksten er ferdig -->
+<div class="valg-container hidden">
+    <div class ="card-grid">
         <div class="card">
-          <h3>html</h3>
-            <p><code>&lt;button onclick="ChangeColor()" class="button"&gt;Endre farge&lt;/button&gt;</code></p>
-            <p> <code>&lt;div id="ChangeMe"&gt;&lt;/div&gt;</code></p>
-            <p><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></p>
+           <button class="button" onclick="velgOption(1)">IT veien: Åpne terminalen og kjør et nettverkssøk (port-scan) for å finne en sårbar inngang.</button>
         </div>
         <div class="card">
-          <h3>css</h3>
-          <p> <code>.button {  <br> 
-              border-radius: 25px; <br>
-              background-color: #778DA9;<br>
-              border:1px solid #415A77;<br>
-              color: #E0E1DD;<br>
-              padding: 20px 40px; /* avstand fra et element til ytterkanten til elementet. t, h, b, v, eller t og b*/<br>
-              text-align: center;<br>
-              font-size: inherit; /*arver fontstørrelsen fra css for body */<br>
-              margin: 20px;</code>
-              }</p>
-          <p><code>#ChangeMe{<br>
-              border-radius: 25px; /* Rounded corners, https://www.w3schools.com/css/css3_borders.asp */<br>
-              width: 400px;<br>
-              height: 400px;<br>
-              background: rgb(119, 141, 169);<br>
-              margin: 20px auto;<br>
-              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect, https://www.w3schools.com/css/css3_shadows.asp */<br>
-            } </code></p>
-          <p></p>
+           <button class="button" onclick="velgOption(2)">Medieveien: Sjekk mediearkivet og analyser metadataene i løsepengeviseot fra hackerne for å finne skjulte spor.</button>
         </div>
         <div class="card">
-          <h3>javascript</h3>
-            <p><code>var button = document.querySelector("button");<br>
-                     var box = document.getElementById("ChangeMe"); <br><br>
+            <button class="button" onclick="velgOption(3)">Sosial engineering: Gå til IT-ansvarlig sitt kontor for å se om passordet står på en Post-it-lapp under tastaturet.</button>
+        </div>
+    </div>
+</div>
 
-                    function ChangeColor() {<br>
-                        if (box.style.background == "rgb(119, 141, 169)"){ <br><br>
-                    &nbsp;        box.style.background = "rgb(13, 27, 42)";              <br><br> 
-                    &nbsp;}else {              <br> <br>
-                            box.style.background = "rgb(119, 141, 169)";<br>
-                    &nbsp;}<br>
-                    }   </code></p>
-            <p> </p>
-        </div>
-      </div>
-  </section>
-  -->
+
+  
 <script src="Spill.js"></script>
 </body>
 </html>

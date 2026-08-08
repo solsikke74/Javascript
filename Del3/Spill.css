@@ -115,17 +115,23 @@ ul.topnav li a:hover:not(.active) {background-color: #0077b6;}
 }
 
 .card {
-    text-align: left;
-    background-color:whitesmoke;
-    border: 1px solid #bfdbf7;
-    border-radius: 8px;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgb(56, 189, 248);
+  color: rgb(15, 23, 42);
+  font-family: 'Fira Code', monospace;
+  border: 1px solid rgb(139, 92, 246);
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(2, 43, 58, 0.15);
+    box-shadow: 0 6px 12px rgb(236, 72, 153);
     border-color: #1f7a8c;
 }
 
