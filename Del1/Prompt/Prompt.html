@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Prompt.css">
+</head>
+<body>
+
+<button onclick="lagVisittkort()" class="button">Lag visittkort</button>
+
+<div id="ChangeMe"></div>
+    
+<h2>Kode</h2>
+
+<div class="card">
+    <h3>html</h3>
+    <p><code>&lt;button onclick="lagVisittkort()" class="button"&gt;Lag visittkort&lt;/button&gt;</code></p>
+    <p> <code>&lt;div id="visittkort"&gt;&lt;/div&gt;</code></p>
+    <p><code>&lt;script src="Visittkort.js"&gt;&lt;/script&gt;</code></p>
+</div>
+
+<div class="card">
+    <h3>css</h3>
+    <p> <code>.button {  <br> 
+        border-radius: 25px; <br>
+        background-color: rgb(224, 225, 221)<br>
+        border:2px solid rgb(65, 90, 119);<br>
+        color: rgb(65, 90, 119);<br>
+        padding: 10px 30px; /* avstand fra et element til ytterkanten til elementet. t, h, b, v, eller t og b*/<br>
+        text-align: center;<br>
+        font-size: inherit; /*arver fontstørrelsen fra css for body */<br>
+        </code>
+        }</p>
+    <p><code>#ChangeMe{<br>
+        width: 350px;<br>
+        min-height: 180px;<br>
+        background: rgb(224, 225, 221);<br>
+        color: rgb(13, 27, 42);<br>
+        border: 3px solid rgb(65, 90, 119); /* Border color, https://www.w3schools.com/css/css3_borders.asp */ <br>
+        border-radius: 15px; /* Rounded corners, https://www.w3schools.com/css/css3_borders.asp */<br>
+        padding: 20px; <br>
+        margin: 20px auto; <br>
+        line-height: 1.8; <br>
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2); <br>
+        text-align: left; <br>
+        font-family: Arial, sans-serif;<br>
+    } </code></p>
+</div>
+<br>
+<div class="card">
+    <h3>javascript</h3>
+    <p><code> function lagVisittkort() { <br>
+
+let navn = prompt("Hva heter du?"); <br>
+
+let alder = prompt("Hvor gammel er du?"); <br>
+
+let farge = prompt("Hva er favorittfargen din?"); <br> <br>
+
+document.getElementById("ChangeMe").innerHTML = <br>
+"Visittkort    " + "<br>" + <br>
+"Navn: " + navn + "<br>" + <br>
+"Alder: " + alder + "<br>" + <br>
+"Favorittfarge: " + farge; <br>
+}
+}   </code></p>
+</div>
+
+<script src="Visittkort.js"></script>
+</body>
+</html>
