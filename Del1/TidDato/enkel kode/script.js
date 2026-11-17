@@ -12,7 +12,7 @@ function ByttTekst() {
         "Teksten er byttet!";
 }
 
-let navn = "Live";
+let navn = "Anne";
 
 document.getElementById("navn").innerHTML = navn;
 
